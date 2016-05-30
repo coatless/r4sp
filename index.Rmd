@@ -1,0 +1,39 @@
+--- 
+title: "Statistical Programming Methods"
+author: "James Balamuta"
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+site: bookdown::bookdown_site
+description: ""
+url: 'https\://coatless.github.io/statprogramming/'
+github-repo: coatless/statprogramming
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+require(knitr)
+read_chunk('r_book.R')
+options(scipen = 8, width=65)
+```
+
+```{r load_packages, message=FALSE,echo=FALSE, warning=FALSE}
+```
+
+```{r misc_func, echo=FALSE}
+```
+
+# Preface
+## A foreword
+
+The book is a compilation of my *many* notes on programming. The material is not necessarily traditional as I have never really received **formal** computer science training. However, the hope is that it is at least helpful and/or provides an alternative explanation for the concepts under observation.
+
+Any typos or other issues should be reported to [James Balamuta](mailto:balamut2@illinois.edu) forthwith.
+
+##  Notation
+
+## R Code
+
+The code used throughout the book is R code. The R code should be able to used as-is. Alongside the PDF download of the book, you should find the R code used within each chapter. 

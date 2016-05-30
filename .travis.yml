@@ -1,0 +1,14 @@
+language: r
+cache: packages
+sudo: false
+env:
+  global:
+  - secure: sESQ/TlHD3g+T+upnF2bp/13Nc1051KUwt2kvrK+zrDFa3DMcvt7IKirnUjYxoC9Gt9M73c6n5aUufpFUCAfKdUoMi5ZoaL11jUBUKKkF0xV+AWJ/nuDTfHLNmnPj/HJMWnPw2lwjwPGiTUyUFrLaNtaQz/bD+DWQ3uIPiU1xw3JVf6SKm7/+I4Khwv/mir9MdpDQnxbQZS2KY3QHqIbJEnQZcY/JtvtCTTw6Gh5zuMspYeIdSLKK3LYA+rJ09ShTMpE0Dv97SzG09nMX19PNDnGoHuygL93AYMxqlnAF7XrKXTIhJLl/MQD0r6w9JRoAWZ531WI6Jxr8BlHoGW61PLvwW252ojIjZ2icNXEQsj823tD9TCDf5tnoDiapbdRvrF2AofR0XuQTV6H6aq6ZlAs6lTZ3R9AMCucufCkYv4BKUmyKrPkhgIJUaf8XH6Q+sbQOcSZjwilPWMwb6lQ+wx32lag0grIEWqH0TqSgkiyqZEZrR/S2uQRYYNY1TxBAhTvh67SSTPnDW4Rc9BWe0ZvtZQshUcyp+IcfTAhpFYTWUQ2xHEq1uxzGeOpFOUbhqcIJmBeUIW37Os5sgdBQvXafAngrg2aczsWbKLvCzz1h3ciX54taqbnOiSY1N49fOSGuQ57JcFJr+v/Sg+0RUHSXhqq9rOHW8RrnXSuCaY=
+before_script:
+- chmod +x ./_build.sh
+- chmod +x ./_deploy.sh
+script:
+- "./_build.sh"
+after_success:
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
+  _deploy.sh
