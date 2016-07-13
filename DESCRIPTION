@@ -1,5 +1,5 @@
 Package: statprogramming
-Title: Statistical Programming Methods!
+Title: Statistical Programming Methods
 Version: 0.0.1
 Authors@R: c(
   person("James", "Balamuta" , "balamut2@illinois.edu", c("aut", "cre"))
@@ -8,9 +8,9 @@ Depends: R (>= 3.3.0)
 URL: https://github.com/coatless/statprogramming
 Imports:
   bookdown,
-  ggplot2,
-  ggfortify,
-  zoo
+  ggplot2
 Remotes:
   sinhrks/ggfortify,
-  rstudio/bookdown
+  rstudio/bookdown,
+  yihue/knitr,
+  rcppcore/rcpp
