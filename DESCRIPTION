@@ -10,7 +10,7 @@ Imports:
   bookdown,
   ggplot2
 Remotes:
+  yihui/knitr,
+  RcppCore/Rcpp,
   sinhrks/ggfortify,
-  rstudio/bookdown,
-  yihue/knitr,
-  rcppcore/rcpp
+  rstudio/bookdown
