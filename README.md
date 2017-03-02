@@ -1,6 +1,7 @@
-[![TravisCI Build Status](https://api.travis-ci.org/coatless/statprogramming.svg)](https://travis-ci.org/coatless/statprogramming)
+[![TravisCI Build Status](https://api.travis-ci.org/coatless/r4sp.svg)](https://travis-ci.org/coatless/r4sp)
 
-# Statistical Programming Methods with `R` (`statprogramming`)
+# `R` for Statistical Programming Methods (`r4sp`)
 
-Statistical Programming Methods Textbook for [STAT 385 @ UIUC](http://stat385.thecoatlessprofessor.com)
+The foundations of a textbook aimed at providing Statistical Programming Methods for [STAT 385 @ UIUC](http://stat385.thecoatlessprofessor.com). The current iteration of the
+textbook can be viewed at <http://r4sp.thecoatlessprofessor.com/>.
 
