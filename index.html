@@ -5,28 +5,27 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Statistical Programming Methods</title>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-  <meta name="description" content="Statistical Programming Methods">
-  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+  <title>R for Statistical Programming</title>
+  <meta name="description" content="R for Statistical Programming">
+  <meta name="generator" content="bookdown 0.3.9 and GitBook 2.6.7">
 
-  <meta property="og:title" content="Statistical Programming Methods" />
+  <meta property="og:title" content="R for Statistical Programming" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://coatless.github.io/statprogramming/" />
+  <meta property="og:url" content="https://coatless.github.io/r4sp/" />
   
   
-  <meta name="github-repo" content="coatless/statprogramming" />
+  <meta name="github-repo" content="coatless/r4sp" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Statistical Programming Methods" />
+  <meta name="twitter:title" content="R for Statistical Programming" />
   
   
   
 
 <meta name="author" content="James Balamuta">
 
-<meta name="date" content="2016-07-14">
 
+<meta name="date" content="2017-03-02">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,7 +34,6 @@
   
 
 <link rel="next" href="the-world-of-programming.html">
-
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,11 +49,49 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
+
 
 
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
@@ -67,12 +103,17 @@
 <li><a href="./">Statistical Programming Methods</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a><ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#a-foreword"><i class="fa fa-check"></i><b>1.1</b> A foreword</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#notation"><i class="fa fa-check"></i><b>1.2</b> Notation</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#r-code"><i class="fa fa-check"></i><b>1.3</b> R Code</a></li>
+<li class="part"><span><b>I Preface</b></span></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#objective-of-the-text"><i class="fa fa-check"></i>Objective of the Text</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#active-development-disclaimer"><i class="fa fa-check"></i>Active Development Disclaimer</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributing"><i class="fa fa-check"></i>Contributing</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#rendering-mathematical-formulae"><i class="fa fa-check"></i>Rendering Mathematical Formulae</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-code-conventions"><i class="fa fa-check"></i>R Code Conventions</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="the-world-of-programming.html"><a href="the-world-of-programming.html"><i class="fa fa-check"></i><b>2</b> The World of Programming</a></li>
+<li class="chapter" data-level="1" data-path="the-world-of-programming.html"><a href="the-world-of-programming.html"><i class="fa fa-check"></i><b>1</b> The World of Programming</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/coatless/statprogramming" target="blank">&copy; 2016 James Balamuta</a></li>
 
@@ -85,7 +126,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistical Programming Methods</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R for Statistical Programming</a>
           </h1>
         </div>
 
@@ -94,23 +135,62 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Statistical Programming Methods</h1>
+<h1 class="title">R for Statistical Programming</h1>
 <h4 class="author"><em>James Balamuta</em></h4>
-<h4 class="date"><em>2016-07-14</em></h4>
+<h4 class="date"><em>2017-03-02</em></h4>
 </div>
-<div id="preface" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Preface</h1>
-<div id="a-foreword" class="section level2">
-<h2><span class="header-section-number">1.1</span> A foreword</h2>
-<p>The book is a compilation of my <em>many</em> notes on programming. The material is not necessarily traditional as I have never really received <strong>formal</strong> computer science training. However, the hope is that it is at least helpful and/or provides an alternative explanation for the concepts under observation.</p>
-<p>Any typos or other issues should be reported to <a href="mailto:balamut2@illinois.edu">James Balamuta</a> forthwith.</p>
+<div id="welcome" class="section level1 unnumbered">
+<h1>Welcome</h1>
+<p>Welcome to <code>R</code> for Statistical Programming textbook. Within this section, we’ll go over the objective of the text, active development disclaimer, ways to contribute, conventions used, acknowledge those who have made contributions, and specify the license that the textbook is released under.</p>
+<div id="objective-of-the-text" class="section level2 unnumbered">
+<h2>Objective of the Text</h2>
+<p>The book is meant to be used as primary reference material for developing statistical code within the <em>R</em> programming language. However, the goal is <em>not</em> to emphasize statistical theory as much as it is to explore underlying computational topics that power. The thought behind this approach is to promote savviness in programming methods that are useful to approach a wide variety of analysis that Statisticians are expected to perform.</p>
+<p>Presently, the book is used within the class STAT 385: Statistics Programming Methods offered at the University of Illinois at Urbana-Champaign (UIUC).</p>
 </div>
-<div id="notation" class="section level2">
-<h2><span class="header-section-number">1.2</span> Notation</h2>
+<div id="active-development-disclaimer" class="section level2 unnumbered">
+<h2>Active Development Disclaimer</h2>
+<p>The contents and structure of this book is under active development. Therefore, the best way to view the content will be to always access the book online rather than a printed copy to be sure you are using the latest version. The online version also affords additional features over the traditional PDF copy such as a scaling text, variety of font faces, and themed backgrounds. However, if you are in need of a local copy, a <a href="http://r4sp.thecoatlessprofessor.com/r4sp.pdf"><strong>pdf version</strong> is also available</a>.</p>
+<p>Having said this, please note that the document is likely to contain many errors.</p>
 </div>
-<div id="r-code" class="section level2">
-<h2><span class="header-section-number">1.3</span> R Code</h2>
-<p>The code used throughout the book is R code. The R code should be able to used as-is. Alongside the PDF download of the book, you should find the R code used within each chapter.</p>
+<div id="contributing" class="section level2 unnumbered">
+<h2>Contributing</h2>
+<p>If you notice any errors, we would be grateful if you would let us know. To let us know about the errors, there are two options available to you. The first and subsequently the fastest being if you are familiar with GitHub and know RMarkdown, then <a href="https://github.com/coatless/r4sp">make a pull request and fix the issue yourself!</a>. Within the online version, there is even an option to automatically start the pull request by clicking the edit button in the top-left corner of the text.</p>
+<p><img src="images/support/edit_button.png" style="display: block; margin: auto;" /></p>
+<p>The second option, that will have a slightly slower resolution time is to send an email to <code>balamut2 AT illinois DOT edu</code> that includes: the error and a possible revision. Please put in the subject header: <code>[R4SP]</code>.</p>
+</div>
+<div id="rendering-mathematical-formulae" class="section level2 unnumbered">
+<h2>Rendering Mathematical Formulae</h2>
+<p>Throughout the book, there will be mathematical symbols used to express the material. Depending on the version of the book, there are two different render engines.</p>
+<ul>
+<li>For the online version, the text uses <a href="https://www.mathjax.org/">MathJax</a> to render mathematical notation for the web. In the event the formulae does not load for a specific chapter, first try to refresh the page. 9 times out of 10 the issue is related to the software library not loading quickly.</li>
+<li>For the pdf version, the text is built using the recommended AMS LaTeX symbolic packages. As a result, there should be no issue displaying equations.</li>
+</ul>
+<p>An example of a mathematical rendering capabilities would be given as:</p>
+<p><span class="math display">\[ a^2 + b^2 = c^2 \]</span></p>
+</div>
+<div id="r-code-conventions" class="section level2 unnumbered">
+<h2>R Code Conventions</h2>
+<p>The code used throughout the book will predominately be <code>R</code> code. To obtain a copy of <a href="https://cloud.r-project.org/"><code>R</code></a>, go to the <a href="https://cloud.r-project.org/">Comprehensive R Archive Network (CRAN)</a> and download the appropriate installer for your operating system.</p>
+<p>When <code>R</code> code is displayed it will be typeset using a <code>monospace</code> font with syntax highlighting enabled to ensure the differentiation of functions, variables, and so on. For example, the following adds 1 to 1</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a =<span class="st"> </span>1L +<span class="st"> </span>1L
+a</code></pre></div>
+<p>Each code segment may contain actual output from <code>R</code>. Such output will appear in grey font prefixed by <code>##</code>. For example, the output of the above code segment would look like so:</p>
+<pre><code>## [1] 2</code></pre>
+<p>Alongside the PDF download of the book, you should find the R code used within each chapter.</p>
+</div>
+<div id="acknowledgements" class="section level2 unnumbered">
+<h2>Acknowledgements</h2>
+<p>The text has been developed in the open and has benefited greatly from many people being able to alert the authors to problematic areas. We are greatful for the corrections, suggestions, or requests of clarity from the following:</p>
+<ul>
+<li>Your name and website address here!</li>
+</ul>
+</div>
+<div id="license" class="section level2 unnumbered">
+<h2>License</h2>
+<div class="figure">
+<img src="images/license/cc.png" alt="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." />
+<p class="caption">This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+</div>
 
 </div>
 </div>
@@ -120,8 +200,9 @@
         </div>
       </div>
 
-<a href="the-world-of-programming.html" class="navigation navigation-next navigation-unique" aria-label="Next page""><i class="fa fa-angle-right"></i></a>
-
+<a href="the-world-of-programming.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
@@ -133,6 +214,7 @@
 require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
+"github": false,
 "facebook": true,
 "twitter": true,
 "google": false,
@@ -148,7 +230,7 @@ gitbook.start({
 },
 "edit": {
 "link": "https://github.com/coatless/statprogramming/edit/master/index.Rmd",
-"text": null
+"text": "Edit"
 },
 "download": null,
 "toc": {
@@ -158,6 +240,17 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
