@@ -31,8 +31,8 @@ the license that the textbook is released under.
 
 The book is meant to be used as primary reference material for developing
 statistical code within the _R_ programming language. However, the goal is _not_
-to emphasize statistical theory as much as it is to explore underlying
-computational topics that power. The thought behind this approach is to promote
+to emphasize statistical theory as much as it is to explore underlying computational
+topics that power the algorithm. The thought behind this approach is to promote
 savviness in programming methods that are useful to approach a wide variety of
 analysis that Statisticians are expected to perform.
 
