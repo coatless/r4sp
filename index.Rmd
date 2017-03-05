@@ -1,5 +1,5 @@
 --- 
-title: "R for Statistical Programming"
+title: "Statistical Programming Methods with R"
 author: "James Balamuta"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -8,8 +8,8 @@ bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
 description: ""
-url: 'https\://coatless.github.io/r4sp/'
-github-repo: coatless/r4sp
+url: 'https\://coatless.github.io/spm/'
+github-repo: coatless/spm
 ---
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
@@ -47,7 +47,7 @@ book online rather than a printed copy to be sure you are using the latest versi
 The online version also affords additional features over the traditional PDF copy 
 such as a scaling text, variety of font faces, and themed backgrounds. However, 
 if you are in need of a local copy, a [**pdf version** is also available
-](http://r4sp.thecoatlessprofessor.com/r4sp.pdf).
+](http://spm.thecoatlessprofessor.com/spm.pdf).
 
 Having said this, please note that the document is likely to contain many errors. 
 
@@ -57,7 +57,7 @@ If you notice any errors, we would be grateful if you would let us know. To let
 us know about the errors, there are two options available to you. The first and
 subsequently the fastest being if you are familiar with GitHub and know 
 RMarkdown, then [make a pull request and fix the issue yourself!
-](https://github.com/coatless/r4sp). Within the online version, there is
+](https://github.com/coatless/spm). Within the online version, there is
 even an option to automatically start the pull request by clicking the edit
 button in the top-left corner of the text.
 
