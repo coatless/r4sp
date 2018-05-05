@@ -15,11 +15,11 @@ env:
   global:
   - secure: "Ab9n99HpOrhuyV8bhHIFVLD783XaYTAoORY0DbYQpPszGTxtp0d7E47ylW7na2XBeQVCMPGXLUxoU6e+0tNruED/meNrXTcp4MBofV4M+FNYzMtVs49MFfQZ+rKzsWhmkApTapylkNHdq/e8Mi3xG1RyBAcWHLgNc8VJ7U/eUC7JAaU9UQg4QVcOh3Z78bRSj4/6HjNBlLVwPDtD2hAaHdKa8dilcon7LwC2YuvcfQsb3ZVnBg67g62pxI4OxZ/9ZZiPMUZnhLpYcb1jcliTVuVzIjFldZQQUSQQRzbaE1tZarny6H7530zMhKxxma/x8tKMGJC/txve3F8DRPgLli7ZDWcvzpk4bvBSvygsqjOboyTou69ZbEQa2O4h6/hztgipCdoGka/YFFxBAZtouwnKAogad4qobt2sKPYTk0meQyLwAtCOX7wFUnTuUCR/aIeR1VL8IiWx1w/sYXW4TOC9hyDn7LnmuxoyB7MEEY24XSNdsgTe5yMw5b3v6XUA5/PaZ0oeq7u8YaJLiFZveKX5Jzjv3iGmH8iCSJSudalpmTLW0OVJPWluiq2tOC94Ijo1DlSD6jxcfF8bC3zRCdbPKcRa9363Xmh/ql9pBEUz7176p9CBWk0JZZCN7tSLA3N/zORVZSmdHSY/5s4u1jK+JxZ37TpwDym8RBPMDJs="
 
-# tint requires the {units, roboto}.sty file
+# tint requires the {units, roboto, fontaxes}.sty file
 # To specify required latex packages c.f. 
 # https://docs.travis-ci.com/user/languages/r/#LaTeX-TexLive-Packages
 before_install:
-  - tlmgr install units roboto
+  - tlmgr install units roboto fontaxes
   
 # Initialize the deployment scripts
 before_script:
