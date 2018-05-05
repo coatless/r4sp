@@ -22,7 +22,7 @@ require(knitr)
 
 # Welcome {-}
 
-Welcome to `R` for Statistical Programming textbook. Within this section, we'll
+Welcome to the Statistical Programming Methods with _R_ textbook. Within this section, we'll
 go over the objective of the text, active development disclaimer, ways to contribute,
 conventions used, acknowledge those who have made contributions, and specify
 the license that the textbook is released under.
@@ -36,8 +36,8 @@ topics that power the algorithm. The thought behind this approach is to promote
 savviness in programming methods that are useful to approach a wide variety of
 analysis that Statisticians are expected to perform.
 
-Presently, the book is used within the class STAT 385: Statistics Programming
-Methods offered at the University of Illinois at Urbana-Champaign (UIUC). 
+Presently, the book is used within the class [STAT 385: Statistics Programming
+Methods](https://stat.illinois.edu/academics/course-catalog) offered at the [University of Illinois at Urbana-Champaign (UIUC)](https://illinois.edu). 
 
 ## Active Development Disclaimer {-}
 
