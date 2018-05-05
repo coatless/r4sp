@@ -1,7 +1,7 @@
 book_filename: "spm"
 delete_merged_file: true
+new_session: yes
 language:
   ui:
     chapter_name: "Chapter "
-    
 before_chapter_script: "code/includes/init_chapter.R"
