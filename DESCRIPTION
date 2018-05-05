@@ -12,6 +12,7 @@ Imports:
   bookdown,
   knitr,
   Rcpp,
-  ggplot2
+  ggplot2,
+  tint
 Remotes:
   rstudio/bookdown

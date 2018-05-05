@@ -11,7 +11,7 @@ bookdown::gitbook:
       text: "Suggest an Edit!"
   includes:
     in_header: google-analytics.html
-bookdown::pdf_book:
+tint::tintBook:
   includes:
     in_header: styling/latex/preamble.tex
   latex_engine: xelatex
