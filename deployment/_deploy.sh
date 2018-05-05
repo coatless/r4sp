@@ -2,6 +2,15 @@
 git config --global user.name "James Balamuta"
 git config --global user.email "balamut2@illinois.edu"
 
+## File System
+# / (Root)
+# |- data
+# |- deployment
+# |- devel
+# |- images
+# |- *.Rmd
+# |- _book # Newly generated commit
+
 # Clone the gh-pages repository
 git clone -b gh-pages \
   https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git \
