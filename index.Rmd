@@ -9,7 +9,7 @@ documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-url: 'https\://coatless.github.io/spm/'
+url: 'https\://spm.thecoatlessprofessor.com/'
 github-repo: coatless/spm
 ---
 

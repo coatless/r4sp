@@ -1,4 +1,4 @@
-# Don"t worry if the system files do not exist
+# Don't worry if the system files do not exist
 .PHONY: html pdf
 
 # Only build the HTML component under a default make
