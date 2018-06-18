@@ -3,7 +3,7 @@
 title: "Statistical Programming Methods with R"
 description: "Programming notes using R for Statistical Applications"
 author: "James Balamuta"
-date: "2018-05-06"
+date: "2018-06-18"
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 documentclass: book
@@ -50,7 +50,7 @@ if you are in need of a local copy, a [**pdf version** is also available
 
 Having said this, please note that the document is likely to contain many errors. 
 
-Your copy of this book was built 2018-05-06.
+Your copy of this book was built 2018-06-18.
 
 ## Contributing {-}
 
