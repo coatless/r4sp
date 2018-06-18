@@ -1,0 +1,147 @@
+# Instructor Guide
+
+Within this chapter, we will focus on the underlying techniques and technology
+required to foster a programming method course. 
+
+## RStudio Toolchain
+
+[RStudio Inc.](https://www.rstudio.com/) is a popular company within the _R_
+community. They are primary responsible for the _RStudio IDE_ and popular _R_
+packages like `rmarkdown`, `shiny`, and the `tidyverse` ecosystem. As _RStudio Inc._
+is a company, their products do cost money; however, each product has an
+[academic pricing](https://www.rstudio.com/pricing/academic-pricing/) scheme
+that -- for accredited public or private schools -- effectively make a majority
+of their Pro products free for teaching purposes. Any use of their products for academic research will void this type of license. 
+
+RStudio makes available special research licenses for their products as well.
+These licenses make their Pro line-up available for `50%` less than the overall
+fee. Though, many of their open source solutions should suffix if set to run on
+an intranet deployment.
+
+### RStudio's Academic Pricing {#academic-pricing}
+
+To receive any of RStudio's Pro products for free, you _must_:
+
+1. provide a syllabus for the course using the technology;
+    - the products being used do _not_ have to be specified, but it is preferred. 
+2. email from a qualified academic institution email address;
+    - e.g. use `@myuniversity.edu`
+3. request an educational discount by e-mailing <info@rstudio.com>
+
+My e-mail template for the requesting academic licensing is:
+
+> Greetings and Salutations,
+>
+> Would it be possible to obtain an academic license to operate 
+**RSTUDIO_PRODUCTS_HERE***? I am **YOUR_NAME** within the Department of 
+**DEPT_NAME** at the University of **YOUR_STATE**.
+>  
+> These services are currently being used during Summer Session 2 in STAT 385: Statistics Programming Methods. The syllabus is available for public viewing here:
+>  
+> http://stat385.thecoatlessprofessor.com/syllabus/
+> 
+> The relevant section emphasizing RStudio software can be found here:
+>
+> http://stat385.thecoatlessprofessor.com/syllabus/#software
+
+At the end of the syllabus, I provide a description of the course software:
+
+> **Software**
+> 
+> The course will use the
+> [**R** statistical computing language](https://cloud.r-project.org/). 
+> The integrated developer environment that we will use to explore *R* is
+> [RStudio IDE](https://www.rstudio.com/products/rstudio/) made by
+> [RStudio Inc](https://www.rstudio.com). As a result, you _must_ use _R_ since
+> the course staff will only be able to provide support for **R**. 
+
+
+### RStudio IDE
+
+
+#### RStudio Cloud (New!)
+
+RStudio Cloud provides the means to run a course online within a controlled 
+environment. Using RStudio Cloud leads to minimal upstart as the R and RStudio
+environments are pre-configured. Furthermore, this allows for students to 
+use university resources -- e.g. a computer in a computer lab -- and be able
+to immediately pick up at home or another location. This also decreases the
+financial burden on students as they are no longer required to explicitly
+have a computer that is capable of performing computations. 
+
+https://github.com/stat385uiuc/rstudio-cloud-intro 
+
+#### RStudio Server (Pro)
+
+#### RStudio in a Container
+
+### Shiny
+
+### RStudio Connect
+
+New entrant.
+
+Benefits:
+
+- Publish lecture slides with embedded code editor areas to encourage students
+  to interact with lecture and provide a metric for engagement during lecture.
+- Improved homework turn-in as Rmd's are built on the server. 
+- Local publishing platform for student work that exposes students to 
+  industry related technologies and needs.
+- [Sandboxed environments](http://docs.rstudio.com/connect/admin/process-management.html#process-management-sandboxing) for process security.
+
+
+### Alternatives
+
+Locally installed IDE's
+
+OS-independent:
+
+- OpenAnalytics' [Architect](https://www.getarchitect.io/)
+- GitHub's [Atom](https://atom.io) Editor with the [Rbox](https://atom.io/packages/rbox)
+- [RKWard](https://rkward.kde.org/)
+- [RAnalyticFlow](http://r.analyticflow.com/en/)
+- [StatET](http://www.walware.de/goto/statet) is an [Eclipse](http://www.eclipse.org/eclipse/) based IDE
+
+OS-specific:
+
+- Windows
+    - Microsoft's [_R_ Tools for Visual Studio (RTVS)](https://www.visualstudio.com/vs/features/rtvs/)
+- macOS
+    - [TextMate](https://macromates.com/)
+
+Web-based IDE's that compete with RStudio Cloud and RStudio Server:
+
+- [R-Brain](https://r-brain.io/en/)
+- [DisplayR](https://www.displayr.com/)
+- [Exploratory](https://exploratory.io/)
+
+## Using GitHub
+
+### Persistent Student Repositories
+
+### Single-use student repositories
+
+### Team workflows
+
+### Securing Turn-in Times
+
+
+## Discussion Forums
+
+### Discourse
+
+### GitHub Issue Tracker
+
+### Piazza
+
+We've found that [Piazza](https://piazza.com/),
+[Blackboard](http://www.blackboard.com/index.html), and
+[Canvas](https://www.canvaslms.com/) are relatively _poor_ solutions to
+fostering high-caliber discussions.
+The design of the software is inherently flawed for a programming class as it
+focuses on quick convergent thinking instead of a divergent thought process
+often found with programming techniques. Furthermore, the applicability of 
+these platforms is largely restricted to the realm of academia. Students
+deserve exposure to technology that they might find in industry whenever 
+possible. 
